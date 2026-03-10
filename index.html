@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>웹 요소의 위치 지정</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        p{
+            width: 300px;
+            border: 1px solid #000;
+        }
+        #pos1{
+            position: absolute;
+            top: 0;
+            right: 0px;
+        }
+        #pos2{
+            position: absolute;
+            right: 20px;
+            bottom: 20px;
+        }
+        #pos3{
+            position: absolute;
+            left: 0px;
+            bottom: 0px;
+        }
+        .box{
+            position:absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50% , -50%);
+            width: 300px;
+            height: 300px;
+            background-color: aqua;
+            opacity: 50%;
+        }
+    </style>
+</head>
+<body>
+    <p id="pos1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat eius, veritatis necessitatibus reiciendis illo officia quia? Corrupti dicta totam explicabo sint illum molestiae rerum dignissimos commodi, accusamus amet? Quidem, omnis.</p>
+    <p id="pos2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, ipsum fugit ut minus nemo rem laboriosam magnam voluptatem ab eaque? Aliquid consequatur reiciendis nobis inventore impedit doloribus voluptates illum eveniet?</p>
+    <p id="pos3">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laboriosam voluptatem repellendus quod porro quibusdam. Tempora reprehenderit quas obcaecati facere, atque repellat ipsam eos, placeat in asperiores temporibus voluptatum ratione sed!</p>
+    <p class="box"></p>
+</body>
+</html>
